@@ -1,0 +1,10 @@
+<h3>Practicing ngif directive</h3>
+
+<p *ngIf="dispName"> Directive Working</p>
+<div *ngIf="task; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>
+    <p>Trying if else </p>
+</ng-template>
+<ng-template #elseBlock>
+    <p>else working</p>
+</ng-template>
